@@ -25,7 +25,7 @@ SECRET_KEY = '+@iy=-q^n%m^^9$z99_loxmuk9qbmcc!e44o*$!@kc9h2d8&t('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://wardsoffice.azurewebsites.net"]
 
 
 # Application definition
