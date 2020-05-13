@@ -91,7 +91,9 @@ DATABASES = {
         'PASSWORD': 'Password123',
         'HOST': 'wards.mysql.database.azure.com',
         'PORT': '3306',
-	'OPTIONS': {'ca': '/home/site/wwwroot/BaltimoreCyberTrustRoot.crt.pem'},
+	'OPTIONS': {
+            'ssl': {'ca': '/home/site/wwwroot/BaltimoreCyberTrustRoot.crt.pem'}
+        }
                       
     }
 }
