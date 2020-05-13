@@ -86,11 +86,14 @@ WSGI_APPLICATION = 'djangoProj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'wards',
-        'USER': 'root',
-        'PASSWORD': 'wards',
-        'HOST': 'localhost',
+        'NAME': 'wardsdb',
+        'USER': 'wards@wards',
+        'PASSWORD': 'Password123',
+        'HOST': 'wards.mysql.database.azure.com',
         'PORT': '3306',
+	'OPTIONS': {
+            'ssl': {'ca': '/home/site/wwwroot/BaltimoreCyberTrustRoot.crt.pem'}
+        }
     }
 }
 
